@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      form {
+        border: 2px solid black;
+        width: 40%;
+        padding: 30px;
+        margin: auto;
+      }
+      .form-field{
+        border-bottom: 1px solid grey;
+        margin-bottom:20px
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .input-field {
+        margin-top: 10px;
+        margin-bottom:15px
+      }
+
+      .input-field input{
+        border:none;
+        outline: none;
+      }
+      .forgot{
+        text-align:right;
+        margin-bottom:25px
+      }
+
+      .forgot a{
+        color:gray
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      /* .login-button{
+        text-align: center;
+        width:80%
+      } */
+
+      .login-button button{
+        width:100%;
+        padding:10px;
+        border-radius:999px
+      }
+
+      .symbols{
+        text-align: center;
+        margin-bottom: 80px;
+      }
+
+      .symbols i{
+        border-radius: 50%;
+        /* background-color:greenyellow; */
+        padding:10px;
+        color:white
+      }
+      .fa-facebook-f{
+        background-color: #365A9C;
+      }
+
+      .fa-twitter{
+        background-color: #13A2F1;
+      }
+
+      .fa-google{
+        background-color: #F14133;
+      }
+
+      .Sign-up{
+        text-align: center;
+      }
+
+      .Sign-up a{
+        color:black
+      }
+
+
+      
+    </style>
+  </head>
+  <body>
+    
+    <form action="">
+      <h1>Login</h1>
+
+      <div class="form-field">
+        <label for="">username</label>
+
+        <div class="input-field">
+          <i class="fa-regular fa-user"></i>
+          <input type="text" placeholder="type your username" />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="">password</label>
+        <div class="input-field">
+          <i class="fa-solid fa-lock"></i>
+          <input type="text" placeholder="type your password" />
+        </div>
+      </div>
+
+      <div class="forgot">
+        <a href="">forgot password?</a>
+      </div>
+
+      <div class="login-button">
+        <button>Login</button>
+      </div>
+
+      <div class="symbols">
+        <p>or sign up using</p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google"></i>
+      </div>
+
+      <div class="Sign-up">
+        <p>or sign up using</p>
+        <a href="">sign Up</a>
+      </div>
+    </form>
+   
+  </body>
+</html>
