@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sai{
+            color:green
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <button onclick="sandeep()">submit</button> -->
+    <input type="text" placeholder="enter your name" id="name">
+    <button onclick="siva()">submit</button>
+
+    <button onClick="madhav()">Login</button>
+<div id="kwaja">   
+
+</div>
+    <script>
+
+// function sandeep(){
+// alert("oye,classes sarigga vintunnavaaa thathayyaaaaa")
+// }
+
+function siva(){
+let username=document.getElementById("name").value
+console.log(username)
+}
+
+function madhav(){
+    let username=document.getElementById("name").value;
+document.getElementById("kwaja").innerText=`how are you ${username}`
+
+
+document.getElementById("kwaja").innerHTML=
+
+`<h1 class="sai">how are you ${username}</h1>`
+
+}
+
+
+
+    </script>
+</body>
+</html>

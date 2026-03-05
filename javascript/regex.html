@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validation()" action="https://www.amazon.in/">
+        <input type="text" placeholder="enter your username" id="name">
+        <input type="text" placeholder="enter your email" id="email" >
+        <button>submit</button>
+    </form>
+
+    <script>
+        function validation(){
+             let name=document.getElementById("name").value;
+              let email=document.getElementById("email").value;
+             let namecheck=/^[A-Za-z1-9]+$/
+             let emailcheck=/^[a-zA-Z0-9._%+-]+@codegnan\.com$/;
+
+            if(name==""){
+                alert("oye,name enter cheyyave");
+            return false
+            }
+
+            if(!name.match(namecheck)){
+                    alert("oye,only capital letters use karo");
+                    return false
+            }
+
+            if(!email.match(emailcheck)){
+                alert("oye,exact domain enter cheyyi");
+                return false
+            }
+            return true
+        }
+    </script>
+</body>
+</html>
