@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" placeholder="enter your password" id="name">
+    <input type="button" value="show" onclick="showHide()" id="btn_field">
+
+    <script>
+function showHide(){
+    let passwordField=document.getElementById("name")
+    let btn_field=document.getElementById("btn_field")
+
+    if(passwordField.type=="password"){
+        passwordField.setAttribute("type","text");
+        btn_field.setAttribute("value","hide")
+    }
+    else if(passwordField.type=="text"){
+passwordField.setAttribute("type","password");
+        btn_field.setAttribute("value","show")
+    }
+}
+    </script>
+</body>
+</html>
