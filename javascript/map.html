@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let studentList=[
+            {name:"kwaja",age:20,money:50000,id:1},
+            {name:"sandeep",age:20,money:60000,id:2},
+            {name:"swathi",age:20,money:80000,id:3},
+            {name:"madhav",age:20,money:20000,id:4}
+        ]
+
+        let g=studentList.reduce( (acc,student)=>{
+
+                return acc+student.money
+
+        },0)
+        console.log(g)
+
+        let u=studentList.reduce((acc,student)=>{
+                return student.money>acc?student.money:acc
+        },0)
+        consolo.log(u)
+
+
+
+        let b=studentList.map((i)=>{
+                    return i.name
+        })
+
+        let d=studentList.map((i)=>{
+                return i.money+5000
+        })
+
+        let f=studentList.filter((i)=>{
+                if(i.money>50000){
+                    return i
+                }
+        })
+
+         let l=studentList.some((i)=>{   //every
+                if(i.money>50000){
+                    return i
+                }
+        })
+        console.log(l)
+
+        console.log(f)
+
+
+        console.log(d)
+
+        console.log(b)
+    </script>
+</body>
+</html>

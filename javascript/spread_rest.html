@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spread  ...
+        //array copy
+        let numbers=[10,20,40];
+
+        console.log(...numbers)
+        let kwaja=[...numbers,90]
+        console.log(kwaja)
+
+        let a=[2,3,4,5]
+        let b=[4,8,9]
+        let sandeep=[...a,...b,89,"sai"]
+        console.log(sandeep)
+
+        let employee={
+            name:"lavanya",
+            age:20
+        }
+
+        let newEmployee={
+            ...employee
+        }
+        console.log(newEmployee);
+
+
+
+        //rest 
+
+        function madhav(a,...syamm){
+            console.log(...syamm)
+        }
+        madhav(30,50,90)
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
