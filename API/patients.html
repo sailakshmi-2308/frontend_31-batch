@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <style>
+        .patients{
+            
+        }
+     </style>
+</head>
+<body>
+    <table id="patients">
+
+    </table>
+
+    <script>
+        onload=function(){
+            getPatients()
+        }
+        function getPatients(){
+            axios.get("https://doc-back.onrender.com/patients")
+            .then((res)=>{
+                console.log(res.data);
+                displayData(res.data);
+            })
+        }
+
+        function displayData(data){
+            let patients_field=document.getElementById("patients")
+
+            data.map((i)=>{
+patients_field.innerHTML+=`
+<tr>
+    <td>${i.name}</td>
+      <td>${i.gender}</td>
+        <td>${i.email}</td>
+          <td>${i.disease}</td>
+            <td>${i.doctor.name}</td>
+              <td>${i.doctor.specialization}</td>
+</tr>
+
+
+
+`
+            })
+
+}
+    </script>
+</body>
+</html>
